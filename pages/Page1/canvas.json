@@ -9148,7 +9148,7 @@
               "widgetId": "w4kl5adzq5",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "defaultTab": "{{appsmith.store.layoutTab || 'Tab 8'}}",
-              "shouldShowTabs": true,
+              "shouldShowTabs": false,
               "tabsObj": {
                 "tab1": {
                   "label": "Tab 1",
