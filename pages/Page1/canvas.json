@@ -7832,7 +7832,7 @@
                   ],
                   "children": [
                     {
-                      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+                      "boxShadow": "none",
                       "widgetName": "Iframe8",
                       "displayName": "Iframe",
                       "iconSVG": "/static/media/icon.34169b6acebc8ace125dd1f638974aae.svg",
@@ -7842,7 +7842,7 @@
                       "topRow": 0,
                       "bottomRow": 48,
                       "parentRowSpace": 10,
-                      "source": "https://embed.lottiefiles.com/animation/106462",
+                      "source": "https://embed.lottiefiles.com/animation/95653",
                       "type": "IFRAME_WIDGET",
                       "hideCard": false,
                       "borderOpacity": 100,
@@ -7850,15 +7850,8 @@
                       "parentColumnSpace": 19.75,
                       "dynamicTriggerPathList": [],
                       "leftColumn": 0,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "borderRadius"
-                        },
-                        {
-                          "key": "boxShadow"
-                        }
-                      ],
-                      "borderWidth": 1,
+                      "dynamicBindingPathList": [],
+                      "borderWidth": "0",
                       "key": "2xmzyt8rkr",
                       "isDeprecated": false,
                       "rightColumn": 64,
@@ -7868,7 +7861,7 @@
                       "parentId": "fsphlktepe",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                      "borderRadius": "0px"
                     }
                   ],
                   "key": "iwrl07ipwp",
