@@ -1,0 +1,28 @@
+{
+  "unpublishedCollection": {
+    "name": "rating",
+    "pageId": "Page1",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmergeObj: {},\n\tmyFun1: () => {\n\t\tconst svg= `<svg class=\"rating-0\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\">\n          <circle cx=\"256\" cy=\"256\" r=\"256\" fill=\"#ffd93b\"></circle>\n          <path d=\"M512 256c0 141.44-114.64 256-256 256-80.48 0-152.32-37.12-199.28-95.28 43.92 35.52 99.84 56.72 160.72 56.72 141.36 0 256-114.56 256-256 0-60.88-21.2-116.8-56.72-160.72C474.8 103.68 512 175.52 512 256z\" fill=\"#f4c534\"></path>\n          <ellipse transform=\"scale(-1) rotate(31.21 715.433 -595.455)\" cx=\"166.318\" cy=\"199.829\" rx=\"56.146\" ry=\"56.13\" fill=\"#fff\"></ellipse>\n          <ellipse transform=\"rotate(-148.804 180.87 175.82)\" cx=\"180.871\" cy=\"175.822\" rx=\"28.048\" ry=\"28.08\" fill=\"#3e4347\"></ellipse>\n          <ellipse transform=\"rotate(-113.778 194.434 165.995)\" cx=\"194.433\" cy=\"165.993\" rx=\"8.016\" ry=\"5.296\" fill=\"#5a5f63\"></ellipse>\n          <ellipse transform=\"scale(-1) rotate(31.21 715.397 -1237.664)\" cx=\"345.695\" cy=\"199.819\" rx=\"56.146\" ry=\"56.13\" fill=\"#fff\"></ellipse>\n          <ellipse transform=\"rotate(-148.804 360.25 175.837)\" cx=\"360.252\" cy=\"175.84\" rx=\"28.048\" ry=\"28.08\" fill=\"#3e4347\"></ellipse>\n          <ellipse transform=\"scale(-1) rotate(66.227 254.508 -573.138)\" cx=\"373.794\" cy=\"165.987\" rx=\"8.016\" ry=\"5.296\" fill=\"#5a5f63\"></ellipse>\n          <path d=\"M370.56 344.4c0 7.696-6.224 13.92-13.92 13.92H155.36c-7.616 0-13.92-6.224-13.92-13.92s6.304-13.92 13.92-13.92h201.296c7.696.016 13.904 6.224 13.904 13.92z\" fill=\"#3e4347\"></path>\n        </svg>`\n\t\t\n\t},\n\tmyFun2: async () => {\n\t\t//use a\n\t\tRating1.iconSVG = 'https://www.oxfordwebstudio.com/user/pages/06.da-li-znate/sta-je-link/sta-je-link.jpg';\n\t\tconsole.log(Rating1)\n\t},\n\ttabChange: (rating2) => {\n\t\t// console.log(rating2)\n\t\t// console.log(`Tab ${rating2 + 1}`);\n\t\tlet a = (isNaN(rating2)  ? 'Tab 1' : `Tab ${rating2 + 1}`);\n\t\tstoreValue(\"ratingValue\", a)\n\t},\n\tclickNext: (tabName, feedback) => {\n\t\tlet feedbackObj =  {\n    \"Listens attentively \": 5,\n    \"Provides essential information\": 5,\n    \"Communicates clearly\": 5,\n    \"Inspires trust\": 5,\n    \"Motivates others\": 5,\n    \"Provides direction\": 5,\n    \"Encourages innovation\": 5,\n    \"Creates a postive environment\": 5,\n    \"Remains available\": 5,\n    \"Adopts a participative approach\": 5,\n    \"Encourages development\": 5,\n    \"Define objectives & priorities \": 5,\n    \"Plan tasks\": 5,\n    \"Demonstrates flexibility\": 5,\n    \"Delegates efficiently\": 5,\n    \"What I am doing well\": 5,\n    \"What should I improve\": 5,\n    \"Any other comments\": 5,\n  }\n\t\t//let mergeObj = feedbackObj\n\t\tstoreValue('ratingValue', 'Tab 1')\n\t\t\t//let\tmergeObj = {};\n\t\t\t\t\tthis.mergeObj = {...appsmith.store.feedback, ...feedback}\n\t\tconsole.log(\"mergeObj\", this.mergeObj)\n\t\tstoreValue('feedback', this.mergeObj);\n\t\tstoreValue('layoutTab', tabName);\n\t\tconsole.log('layoutTab', appsmith.store.layoutTab)\n\t\tconsole.log(appsmith.store.feedback)\n\t},\n\tsubmitFeedback: (tabName, feedback) => {\n\t\tthis.mergeObj = {...appsmith.store.feedback, ...feedback}\n\t\tstoreValue('feedback', this.mergeObj);\n\t\tstoreValue('layoutTab', tabName);\n\t\taddFeedback.run(appsmith.store.feedback)\n\t\t//.then(() => {...}) // run after the query is successful\n    //.catch(() => {...}) // run if the query encounters any errors\n\t}\n}",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      },
+      {
+        "name": "mergeObj",
+        "value": "{}"
+      }
+    ]
+  },
+  "id": "Page1_rating",
+  "deleted": false,
+  "gitSyncId": "62e818f04003a7259a305724_62ebcf8ab2f8027edfbe85c5"
+}
