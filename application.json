@@ -11,7 +11,7 @@
   "color": "#F5D1D1",
   "icon": "money",
   "unpublishedAppLayout": {
-    "type": "FLUID"
+    "type": "DESKTOP"
   },
   "publishedAppLayout": {
     "type": "FLUID"

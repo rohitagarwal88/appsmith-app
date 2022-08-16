@@ -41,7 +41,7 @@
           "data": ""
         },
         "rowObjects": {
-          "data": "{{{\n\t\"Reviewer\": appsmith.user.name,\n\t...appsmith.store.feedback,\n\t\"What should I improve\": Input2.text\n}}}"
+          "data": "{{{\n\t...appsmith.store.feedback,\n\t\"Reviewer\": appsmith.user.name,\n\t\"What should I improve\": Input2.text\n}}}"
         },
         "sheetName": {
           "data": "Sheet1"
@@ -72,7 +72,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "{\n\t\"Reviewer\": appsmith.user.name,\n\t...appsmith.store.feedback,\n\t\"What should I improve\": Input2.text\n}"
+      "{\n\t...appsmith.store.feedback,\n\t\"Reviewer\": appsmith.user.name,\n\t\"What should I improve\": Input2.text\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
