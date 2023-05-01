@@ -19,9 +19,11 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "text => {\n  let len = text.length ? text.length : 0;\n  if (len < 10) {\n    storeValue('ratingValue', 'Tab 2');\n  } else if (len > 10 && len < 30) {\n    storeValue('ratingValue', 'Tab 3');\n  } else if (len > 30 && len < 50) {\n    storeValue('ratingValue', 'Tab 4');\n  } else if (len > 50 && len < 80) {\n    storeValue('ratingValue', 'Tab 5');\n  } else if (len > 80) {\n    storeValue('ratingValue', 'Tab 6');\n  }\n}",
+      "selfReferencingDataPaths": [],
       "jsArguments": [
-        {}
+        {
+          "name": "text"
+        }
       ],
       "isAsync": false
     },
@@ -34,9 +36,6 @@
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [
-      "text => {\n  let len = text.length ? text.length : 0;\n  if (len < 10) {\n    storeValue('ratingValue', 'Tab 2');\n  } else if (len > 10 && len < 30) {\n    storeValue('ratingValue', 'Tab 3');\n  } else if (len > 30 && len < 50) {\n    storeValue('ratingValue', 'Tab 4');\n  } else if (len > 50 && len < 80) {\n    storeValue('ratingValue', 'Tab 5');\n  } else if (len > 80) {\n    storeValue('ratingValue', 'Tab 6');\n  }\n}"
-    ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],

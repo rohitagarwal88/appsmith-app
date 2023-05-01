@@ -18,6 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
+      "selfReferencingDataPaths": [],
       "formData": {
         "command": {
           "data": "FETCH_MANY"
@@ -32,7 +33,10 @@
           }
         },
         "projection": {
-          "data": []
+          "data": [],
+          "componentData": [],
+          "viewType": "component",
+          "jsonData": "[]"
         },
         "queryFormat": {
           "data": "ROWS"
@@ -44,7 +48,10 @@
           "data": "Sheet1"
         },
         "sheetUrl": {
-          "data": "https://docs.google.com/spreadsheets/d/16ha2RcYOfPNRXzRaOb22m8ne2pD5g-3i6fBkOxGUUY4/edit"
+          "data": "https://docs.google.com/spreadsheets/d/16ha2RcYOfPNRXzRaOb22m8ne2pD5g-3i6fBkOxGUUY4/edit",
+          "componentData": "https://docs.google.com/spreadsheets/d/16ha2RcYOfPNRXzRaOb22m8ne2pD5g-3i6fBkOxGUUY4/edit",
+          "viewType": "component",
+          "jsonData": "https://docs.google.com/spreadsheets/d/16ha2RcYOfPNRXzRaOb22m8ne2pD5g-3i6fBkOxGUUY4/edit"
         },
         "smartSubstitution": {
           "data": true
@@ -55,7 +62,15 @@
               "column": "",
               "order": "Ascending"
             }
-          ]
+          ],
+          "componentData": [
+            {
+              "column": "",
+              "order": "Ascending"
+            }
+          ],
+          "viewType": "component",
+          "jsonData": "[\n\t{\n\t\t\"column\": \"\",\n\t\t\"order\": \"Ascending\"\n\t}\n]"
         },
         "tableHeaderIndex": {
           "data": "2"
@@ -68,7 +83,17 @@
                 "condition": "LT"
               }
             ]
-          }
+          },
+          "componentData": {
+            "condition": "AND",
+            "children": [
+              {
+                "condition": "LT"
+              }
+            ]
+          },
+          "viewType": "component",
+          "jsonData": "{\n\t\"condition\": \"AND\",\n\t\"children\": [\n\t\t{\n\t\t\t\"condition\": \"LT\"\n\t\t}\n\t]\n}"
         }
       }
     },

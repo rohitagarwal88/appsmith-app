@@ -18,6 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
+      "selfReferencingDataPaths": [],
       "formData": {
         "command": {
           "data": "INSERT_ONE"

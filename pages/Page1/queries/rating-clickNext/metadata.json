@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "submitFeedback",
-    "fullyQualifiedName": "rating.submitFeedback",
+    "name": "clickNext",
+    "fullyQualifiedName": "rating.clickNext",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -19,10 +19,14 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "(tabName, feedback) => {\n  rating.mergeObj = {\n    ...appsmith.store.feedback,\n    ...feedback\n  };\n  storeValue('feedback', rating.mergeObj);\n  storeValue('layoutTab', tabName);\n  addFeedback.run(appsmith.store.feedback);\n}",
+      "selfReferencingDataPaths": [],
       "jsArguments": [
-        {},
-        {}
+        {
+          "name": "tabName"
+        },
+        {
+          "name": "feedback"
+        }
       ],
       "isAsync": true
     },
@@ -35,15 +39,12 @@
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [
-      "(tabName, feedback) => {\n  rating.mergeObj = {\n    ...appsmith.store.feedback,\n    ...feedback\n  };\n  storeValue('feedback', rating.mergeObj);\n  storeValue('layoutTab', tabName);\n  addFeedback.run(appsmith.store.feedback);\n}"
-    ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_rating.submitFeedback",
+  "id": "Page1_rating.clickNext",
   "deleted": false,
-  "gitSyncId": "62e818f04003a7259a305724_62fa64bf84757e0c05542cd7"
+  "gitSyncId": "62e818f04003a7259a305724_62fa341284757e0c05541c5c"
 }

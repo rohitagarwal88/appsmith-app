@@ -1,0 +1,28 @@
+{
+  "unpublishedCollection": {
+    "name": "rating",
+    "pageId": "Page1",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      },
+      {
+        "name": "mergeObj",
+        "value": "{}"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "Page1_rating",
+  "deleted": false,
+  "gitSyncId": "62e818f04003a7259a305724_62ebcf8ab2f8027edfbe85c5"
+}

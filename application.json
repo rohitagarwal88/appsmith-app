@@ -3,6 +3,14 @@
     {
       "id": "Page1",
       "isDefault": true
+    },
+    {
+      "id": "Page2",
+      "isDefault": false
+    },
+    {
+      "id": "Marketing_customers",
+      "isDefault": false
     }
   ],
   "viewMode": false,
@@ -11,11 +19,13 @@
   "color": "#F5D1D1",
   "icon": "money",
   "unpublishedAppLayout": {
-    "type": "DESKTOP"
+    "type": "FLUID"
   },
   "publishedAppLayout": {
     "type": "DESKTOP"
   },
+  "unpublishedCustomJSLibs": [],
+  "publishedCustomJSLibs": [],
   "evaluationVersion": 2,
   "applicationVersion": 2,
   "isManualUpdate": false,
